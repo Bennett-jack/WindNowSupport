@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WindNow - Privacy Policy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(135deg, #0a1628 0%, #1a2942 50%, #0d1f3c 100%);
+            min-height: 100vh;
+            color: #e8eef5;
+            line-height: 1.7;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: #3b82f6;
+            text-decoration: none;
+            font-weight: 500;
+            margin-bottom: 30px;
+            transition: color 0.2s;
+        }
+        
+        .back-link:hover {
+            color: #60a5fa;
+        }
+        
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            background: linear-gradient(135deg, #fff 0%, #94a3b8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .updated {
+            color: #64748b;
+            font-size: 0.95rem;
+        }
+        
+        .content {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 40px;
+            backdrop-filter: blur(10px);
+        }
+        
+        h2 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin: 30px 0 15px;
+            color: #f1f5f9;
+        }
+        
+        h2:first-child {
+            margin-top: 0;
+        }
+        
+        h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin: 20px 0 10px;
+            color: #cbd5e1;
+        }
+        
+        p {
+            color: #94a3b8;
+            margin-bottom: 15px;
+        }
+        
+        ul {
+            color: #94a3b8;
+            margin-bottom: 15px;
+            padding-left: 25px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        strong {
+            color: #e8eef5;
+            font-weight: 600;
+        }
+        
+        a {
+            color: #3b82f6;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            color: #60a5fa;
+            text-decoration: underline;
+        }
+        
+        .highlight {
+            background: rgba(59, 130, 246, 0.1);
+            border-left: 3px solid #3b82f6;
+            padding: 15px 20px;
+            border-radius: 0 10px 10px 0;
+            margin: 20px 0;
+        }
+        
+        .highlight p {
+            margin: 0;
+            color: #cbd5e1;
+        }
+        
+        hr {
+            border: none;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            margin: 30px 0;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: #475569;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            .content {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M19 12H5M12 19l-7-7 7-7"/>
+            </svg>
+            Back to Support
+        </a>
+        
+        <header>
+            <h1>Privacy Policy</h1>
+            <p class="updated">Last Updated: January 2026</p>
+        </header>
+        
+        <div class="content">
+            <h2>Introduction</h2>
+            <p>WindNow ("we", "our", or "the app") is a weather application designed to provide wind and weather information from various data sources. This Privacy Policy explains how we collect, use, and protect your information when you use our app.</p>
+            
+            <h2>Information We Collect</h2>
+            
+            <h3>Location Data</h3>
+            <p>WindNow requests access to your device's location for the following purposes:</p>
+            <ul>
+                <li><strong>Sorting weather stations by distance:</strong> When you grant "When In Use" location permission, we use your location to sort nearby weather stations and show distance information.</li>
+                <li><strong>Wind alerts (optional):</strong> If you enable wind alerts and grant "Always" location permission, we use your location to determine when you are near monitored weather stations and send you notifications when wind conditions exceed your specified thresholds.</li>
+            </ul>
+            
+            <div class="highlight">
+                <p><strong>Important:</strong> Your location data is processed entirely on your device. We do not transmit, store, or collect your location data on any external servers.</p>
+            </div>
+            
+            <h3>API Keys</h3>
+            <p>If you choose to use Holfuy weather station data, you may enter your own Holfuy API key. This key is stored securely in your device's Keychain and is only used to authenticate requests to the Holfuy service. We do not have access to your API keys.</p>
+            
+            <h3>Weather Data Requests</h3>
+            <p>When you use the app, it makes requests to the following third-party weather data services:</p>
+            <ul>
+                <li>Bureau of Meteorology (BoM) - Australian government weather service</li>
+                <li>Holfuy - Weather station network (if configured)</li>
+                <li>Open-Meteo - Weather forecast API</li>
+            </ul>
+            <p>These requests include general location coordinates (latitude/longitude) for the weather stations you've added, not your personal location.</p>
+            
+            <h2>Third-Party Services</h2>
+            
+            <h3>Google AdMob</h3>
+            <p>WindNow displays advertisements provided by Google AdMob. Google may collect and use data for advertising purposes according to their privacy policy. This may include:</p>
+            <ul>
+                <li>Device identifiers</li>
+                <li>IP address</li>
+                <li>General location (derived from IP)</li>
+                <li>App usage data</li>
+            </ul>
+            <p>For more information about Google's data practices, please visit: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></p>
+            <p>You can opt out of personalized advertising in your device's Settings under Privacy &gt; Advertising.</p>
+            
+            <h3>Weather Data Providers</h3>
+            <p>The weather data providers (BoM, Holfuy, Open-Meteo) may log requests made to their servers. Please refer to their respective privacy policies:</p>
+            <ul>
+                <li><a href="http://www.bom.gov.au/other/privacy.shtml" target="_blank" rel="noopener">Bureau of Meteorology Privacy Policy</a></li>
+                <li><a href="https://holfuy.com/en/privacy" target="_blank" rel="noopener">Holfuy Privacy Policy</a></li>
+                <li><a href="https://open-meteo.com/en/terms" target="_blank" rel="noopener">Open-Meteo Terms</a></li>
+            </ul>
+            
+            <h2>Data Storage</h2>
+            <p>All app data is stored locally on your device, including:</p>
+            <ul>
+                <li>Your configured weather stations and cards</li>
+                <li>Display preferences and settings</li>
+                <li>Alert configurations</li>
+                <li>Cached weather data</li>
+            </ul>
+            <p>We do not operate any servers that store your personal data.</p>
+            
+            <h2>Data Sharing</h2>
+            <p>We do not sell, trade, or otherwise transfer your personal information to third parties. The only data transmitted from your device is:</p>
+            <ul>
+                <li>Weather data requests to the services listed above</li>
+                <li>Advertising-related data to Google AdMob (as described above)</li>
+            </ul>
+            
+            <h2>Notifications</h2>
+            <p>If you enable wind alerts, the app will send local push notifications to your device when wind conditions exceed your configured thresholds. These notifications are generated entirely on your device and are not sent through any external notification service.</p>
+            
+            <h2>Children's Privacy</h2>
+            <p>WindNow is not directed at children under the age of 13. We do not knowingly collect personal information from children under 13.</p>
+            
+            <h2>Your Rights</h2>
+            <p>You have the right to:</p>
+            <ul>
+                <li><strong>Access:</strong> View all data stored by the app in your device's settings</li>
+                <li><strong>Delete:</strong> Remove the app to delete all locally stored data</li>
+                <li><strong>Opt-out:</strong> Disable location services or notifications in your device's Settings</li>
+                <li><strong>Ad preferences:</strong> Adjust personalized advertising settings in your device's Privacy settings</li>
+            </ul>
+            
+            <h2>Changes to This Privacy Policy</h2>
+            <p>We may update this Privacy Policy from time to time. We will notify you of any changes by updating the "Last Updated" date at the top of this policy. We encourage you to review this Privacy Policy periodically.</p>
+            
+            <h2>Contact Us</h2>
+            <p>If you have any questions about this Privacy Policy or the app's data practices, please contact us through our <a href="index.html">support page</a>.</p>
+            
+            <h2>Consent</h2>
+            <p>By using WindNow, you consent to this Privacy Policy.</p>
+            
+            <hr>
+            
+            <p style="text-align: center; color: #64748b;">&copy; 2026 WindNow. All rights reserved.</p>
+        </div>
+    </div>
+    
+    <footer>
+        <p><a href="index.html">Back to Support</a></p>
+    </footer>
+</body>
+</html>

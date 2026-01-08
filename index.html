@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WindNow - Support</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(135deg, #0a1628 0%, #1a2942 50%, #0d1f3c 100%);
+            min-height: 100vh;
+            color: #e8eef5;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .logo {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #3b82f6 0%, #06b6d4 100%);
+            border-radius: 20px;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 36px;
+            box-shadow: 0 10px 40px rgba(59, 130, 246, 0.3);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            background: linear-gradient(135deg, #fff 0%, #94a3b8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .tagline {
+            color: #64748b;
+            font-size: 1.1rem;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 30px;
+            backdrop-filter: blur(10px);
+        }
+        
+        h2 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #f1f5f9;
+        }
+        
+        p {
+            color: #94a3b8;
+            margin-bottom: 15px;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .feature {
+            background: rgba(59, 130, 246, 0.1);
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            border-radius: 12px;
+            padding: 15px;
+        }
+        
+        .feature-title {
+            font-weight: 600;
+            color: #e8eef5;
+            margin-bottom: 5px;
+        }
+        
+        .feature-desc {
+            font-size: 0.9rem;
+            color: #64748b;
+            margin: 0;
+        }
+        
+        .contact-options {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .contact-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+            color: white;
+            border: none;
+            padding: 16px 28px;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            font-family: inherit;
+            text-decoration: none;
+        }
+        
+        .contact-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(59, 130, 246, 0.3);
+            color: white;
+        }
+        
+        .contact-btn.secondary {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .contact-btn.secondary:hover {
+            background: rgba(255, 255, 255, 0.15);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        .email-display {
+            color: #64748b;
+            font-size: 0.9rem;
+            text-align: center;
+            margin-top: 10px;
+        }
+        
+        .links {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        
+        a {
+            color: #3b82f6;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        
+        a:hover {
+            color: #60a5fa;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: #475569;
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: #64748b;
+        }
+        
+        .faq-item {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 20px 0;
+        }
+        
+        .faq-item:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+        
+        .faq-item:first-child {
+            padding-top: 0;
+        }
+        
+        .faq-q {
+            font-weight: 600;
+            color: #e8eef5;
+            margin-bottom: 10px;
+        }
+        
+        .faq-a {
+            color: #94a3b8;
+            margin: 0;
+        }
+        
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .card {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2"/>
+                </svg>
+            </div>
+            <h1>WindNow</h1>
+            <p class="tagline">Real-time wind conditions for pilots and outdoor enthusiasts</p>
+        </header>
+        
+        <div class="card">
+            <h2>About WindNow</h2>
+            <p>WindNow is an iOS app that provides real-time wind and weather data from multiple sources including Bureau of Meteorology stations, Holfuy weather stations, and Open-Meteo forecasts. Perfect for paragliders, hang gliders, drone pilots, kiters, and anyone who needs accurate wind information.</p>
+            
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-title">Live Wind Data</div>
+                    <p class="feature-desc">Real-time readings from weather stations</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-title">Wind Alerts</div>
+                    <p class="feature-desc">Get notified when conditions are right</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-title">Altitude Forecasts</div>
+                    <p class="feature-desc">Winds aloft at multiple altitudes</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-title">Customizable Cards</div>
+                    <p class="feature-desc">Build your personal dashboard</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2>Contact Support</h2>
+            <p>Have a question, found a bug, or want to suggest a feature? We'd love to hear from you.</p>
+            
+            <div class="contact-options">
+                <a href="mailto:windnowapp@gmail.com?subject=WindNow%20Support" class="contact-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                        <polyline points="22,6 12,13 2,6"/>
+                    </svg>
+                    Send Email
+                </a>
+            </div>
+            <p class="email-display">windnowapp@gmail.com</p>
+        </div>
+        
+        <div class="card">
+            <h2>Frequently Asked Questions</h2>
+            
+            <div class="faq-item">
+                <div class="faq-q">How do I get a Holfuy API key?</div>
+                <p class="faq-a">Visit <a href="https://holfuy.com" target="_blank" rel="noopener">holfuy.com</a> and create a free account. Your API key allows access to up to 3 weather stations. Enter the key in WindNow Settings to enable Holfuy stations.</p>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-q">Why do I need to enable location?</div>
+                <p class="faq-a">Location is used to sort weather stations by distance and to enable wind alerts when you're near your favorite flying sites. Your location data stays on your device.</p>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-q">How do wind alerts work?</div>
+                <p class="faq-a">Set up alerts on any weather station card. When wind conditions meet your criteria (speed and direction thresholds), you'll receive a notification. Requires "Always" location permission for background alerts.</p>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-q">What weather sources are available?</div>
+                <p class="faq-a">WindNow supports Bureau of Meteorology (Australia), Holfuy weather stations (worldwide), and Open-Meteo forecasts for winds aloft data.</p>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2>Links</h2>
+            <div class="links">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="https://holfuy.com" target="_blank" rel="noopener">Holfuy.com</a>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2026 WindNow. All rights reserved.</p>
+        <p><a href="privacy.html">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>
